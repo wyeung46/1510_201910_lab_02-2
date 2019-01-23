@@ -28,3 +28,7 @@ def doubler(parameter):
 
 doubler(parameter)
 
+def this_year():
+    print(int(45 * 45) + (24 * 24) - (26 * 26) + 93)
+
+this_year()
