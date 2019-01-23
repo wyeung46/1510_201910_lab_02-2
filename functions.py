@@ -20,3 +20,11 @@ def main():
 if __name__ == "__main__":
     main()
 
+parameter = input("Enter the parameter you want to double up. ")
+
+def doubler(parameter):
+    doubledparameter = str(parameter) + str(parameter)
+    print(doubledparameter)
+
+doubler(parameter)
+
