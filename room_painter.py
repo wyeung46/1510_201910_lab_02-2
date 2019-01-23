@@ -1,7 +1,7 @@
-"""DOCSTRING for Week 03 Notes"""
-# Wendell Yeung
-# A01063806
-# 22 January 2019
+"""DOCSTRING for Lab 02"""
+#Wendell Yeung
+#A01063806
+#22 January 2019
 
 
 COVERAGE = 400
