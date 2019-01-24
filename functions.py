@@ -17,9 +17,6 @@ def main():
     result = format_name(first, last)
     print(result)
 
-if __name__ == "__main__":
-    main()
-
 parameter = input("Enter the parameter you want to double up. ")
 
 def doubler(parameter):
@@ -34,6 +31,23 @@ def this_year():
 this_year()
 
 def base_conversion():
-    base = input("Enter your destination base (0-9) ")
-    maximumnumber = (base - 1) + ((base * 2) - 1) + ((base * 3) - 1) + ((base * 4) - 1)
+    base = int(input("Enter your destination base (2-9):"))
+    maximumnumber = (base * base * base * base) - 1
     print("Your maximum 4-digit number in this base is", maximumnumber)
+    numbertoconvert = int(input("Enter a number equal to or lower than the maximum:"))
+    stage1 = numbertoconvert % base
+    stage1a = int(numbertoconvert / base)
+    stage2 = stage1a % base
+    stage2a = int(stage1a / base)
+    stage3 = stage2a % base
+    stage3a = int(stage2a / base)
+    stage4 = stage3a % base
+    convertedstring = str(stage4) + str(stage3) + str(stage2) + str(stage1)
+    convertednumber = int(convertedstring)
+    print("Your entered number converted to your entered base is", convertednumber)
+
+base_conversion()
+
+if __name__ == "__main__":
+    main()
+    base_conversion()
