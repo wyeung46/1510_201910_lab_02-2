@@ -3,7 +3,7 @@
 #A01063806
 #22 January 2019
 
-def format_name(firstName, lastName):
+def format_name(firstName, lastName): #formats two strings entered by the user into a first name and last name
     # fullname = str(firstName) + " " + str(lastName)
     # titledname = fullname.title()
     # finalname = titledname.strip()
@@ -19,18 +19,18 @@ def main():
 
 parameter = input("Enter the parameter you want to double up. ")
 
-def doubler(parameter):
+def doubler(parameter): #converts a user input into a string and doubles it up
     doubledparameter = str(parameter) + str(parameter)
     print(doubledparameter)
 
 doubler(parameter)
 
-def this_year():
+def this_year(): #prints and equation that equals the current year
     print(int(45 * 45) + (24 * 24) - (26 * 26) + 93)
 
 this_year()
 
-def base_conversion():
+def base_conversion(): #converts a user-inputted number into a user-inputted bases
     base = int(input("Enter your destination base (2-9):"))
     maximumnumber = (base * base * base * base) - 1
     print("Your maximum 4-digit number in this base is", maximumnumber)
