@@ -32,3 +32,6 @@ def this_year():
     print(int(45 * 45) + (24 * 24) - (26 * 26) + 93)
 
 this_year()
+
+def base_conversion():
+    base = input("Enter your destination base (0-9) ")
