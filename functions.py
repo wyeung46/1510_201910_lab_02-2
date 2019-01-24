@@ -35,3 +35,5 @@ this_year()
 
 def base_conversion():
     base = input("Enter your destination base (0-9) ")
+    maximumnumber = (base - 1) + ((base * 2) - 1) + ((base * 3) - 1) + ((base * 4) - 1)
+    print("Your maximum 4-digit number in this base is", maximumnumber)
